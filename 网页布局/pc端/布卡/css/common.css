@@ -1,0 +1,137 @@
+.header {
+    padding-top:33px;
+    padding-bottom: 48px;
+    background-color: #000;
+}
+.header h1 a{
+    display: block;
+    width:338px;
+    height:44px;
+    background: url('../images/logo.png') no-repeat;
+}
+/* 导航 */
+.nav {
+    margin-top:-17px;
+    background-color: #fff;
+    /* box-shadow: 1px 1px 0px 2px  #EBEBEB; */
+}
+.nav ul li{
+    float: left;
+    width:124px;
+    height:56px;
+    line-height: 56px;
+    font-size: 14px;
+    text-align: center;
+}
+.nav ul li:first-child,
+.nav ul li:hover{
+    background-color: #F8B62D;
+}
+.nav ul li:first-child a,
+.nav ul li:hover a{
+    display: inline-block;
+    width:100%;
+    color: #fff;
+}
+.search{
+    margin-top:14px;
+    margin-bottom: 17px;
+    height:23px;
+    border-left:1px solid #ccc;
+    color:#C9C9C9;
+}
+.search i{
+    margin-left:15px;
+    margin-right:9px;
+}
+.search input[type="text"]{
+    height: 23px;
+    line-height: 23px;
+}
+.nav-right>a{
+    display: inline-block;
+    width:130px;
+    height:56px;
+    background-color: #F8B62D;
+    line-height: 56px;
+    font-size: 14px;
+    text-align: center;
+    color:#fff;
+}
+.nav-right>a i{
+    margin-right:10px;
+    font-size: 28px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+
+
+/* footer */
+.footer{
+    margin-top:67px;
+}
+.footer dl{
+    float: left;
+    width:230px;
+    line-height: 24px;
+    margin-right:20px;
+    font-size: 14px;
+    color: #C4C4C4;
+}
+.footer dl:nth-child(2){
+    width:193px;
+}
+.footer dl:nth-child(3){
+    width:115px;
+}
+.footer dl:nth-child(4){
+    width:330px;
+}
+.footer dl:nth-child(4) dt span{
+    display: block;
+    width:25px;
+    height:25px;
+    background: url('../images/wenwangwenicon.png') no-repeat ;
+    background-size: 23px 23px;
+}
+.footer dl:nth-child(5){
+    position: relative;
+    width:166px;
+}
+.footer dl:nth-child(5) dt span{
+    display: block;
+    width:37px;
+    height:69px;
+    background: url('../images/bkn.png') no-repeat ;
+}
+.footer dl dt{
+    float: left;
+    height:78px;
+    color:#595858;
+}
+.footer dl dt i{
+    margin-right:12px;
+}
+.footer dl dd{
+    /* margin-bottom: 12px; */
+    margin-left: 12px;
+}
+.jiao{
+    position: absolute;
+    top:8px;
+    left:43px;
+    width:0;
+    height: 0;
+    border-right:17px solid #4a4947;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.tip{
+    float: left;
+    margin-left:18px;
+    padding:8px 8px 8px 12px;
+    background-color: #4A4947;
+    color: #fff;
+    border-radius: 8px;
+}

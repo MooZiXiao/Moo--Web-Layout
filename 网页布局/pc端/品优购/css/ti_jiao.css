@@ -1,0 +1,221 @@
+
+.header{
+    height: 105px;
+    border:0;
+}
+.header .logo>a{
+    margin-left:22px;
+    font-size: 22px;
+    line-height: 56px;
+    color:#333;
+}
+.search{
+    left:660px;
+}
+
+.w>h3{
+    margin-bottom:20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* 收件人信息 */
+.ti_jiao{
+    padding:20px 25px;
+    border:1px solid #DDD;
+}
+.shou_jian_ren,
+.zi_ti_address,
+.zhi_fu_type,
+.song_hu{
+    border-bottom:1px solid #DDD;
+}
+.shou_jian_ren h4,
+.zhi_fu_type h4,
+.song_hu h4,
+.fa_piao h4{
+    margin-top:20px;
+    padding-left:25px;
+    font-size: 14px;
+    color:#333;
+}
+.shou_jian_ren h4 a{
+    float: right;
+    margin-right:35px;
+    font-size: 12px;
+    font-weight: 500;
+    color:#1474AF;
+}
+/* 地址 */
+.shou_jian_ren ul,
+.zi_ti_address ul,
+.zhi_fu_type ul,
+.song_hu ul,
+.fa_piao ul{
+    padding:20px 0;
+    padding-left:44px;
+}
+.shou_jian_ren ul li,
+.zi_ti_address ul li,
+.zhi_fu_type ul li,
+.song_hu ul li,
+.fa_piao ul li{
+    float: left;
+    margin-right:18px;
+    line-height: 28px;
+}
+.zi_ti{
+    display: inline-block;
+    width:140px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border:2px solid #C81623;
+}
+.shou_jian_ren>a{
+    margin-left:69px;
+}
+.shou_jian_ren>a span{
+    display: inline-block;
+    margin:0px 12px 20px 12px;
+    font-size: 16px;
+}
+/* 自提地址 */
+.zi_ti_address,
+.zhi_fu_type,
+.song_hu{
+}
+.zi_ti_address ul li{
+    line-height: 30px;
+}
+.zi_ti_dian{
+    display: inline-block;
+    width: 142px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border:2px solid #C81623;
+}
+/* 支付方式 */
+.zhi_fu_type ul li{
+    width:96px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border:1px solid #DDD;
+}
+.zhi_fu_type ul li:last-child{
+    border:0;
+}
+/* 送货 */
+.song_hu>h4{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.song_hu_info h4,
+.song_hu_product_info h4{
+    font-size: 12px;
+}
+.song_hu_info{
+    background-color: #F4F4F4;
+}
+.song_hu_info ul:nth-child(2){
+    margin-top:20px;
+}
+/* 定单信息 */
+.song_hu_product_info{
+    margin-top:1px;
+    margin-bottom: 20px;
+    background-color: #FEEDEF;
+}
+/* 商品信息 */
+.song_hu_product_info ul{
+    background-color: #FEEDEF;
+}
+.song_hu_product_info ul li:nth-child(1)>a{
+    display: inline-block;
+    margin-right:111px;
+    border:1px solid #DDD;
+}
+.song_hu_product_info ul li:nth-child(2){
+    margin-right:279px;
+    width:335px;
+}
+.song_hu_product_info ul li:nth-child(2) span{
+    display: inline-block;
+    width:335px;
+    color: #C81623;
+}
+.song_hu_product_info ul li:nth-child(3){
+    color: #C81623;
+    margin-right:51px;
+}
+.song_hu_product_info ul li:nth-child(4){
+    margin-right:81px;
+}
+/* 发票 */
+.fa_piao ul li:last-child a{
+    color:#1474AF;
+}
+.you_hui h4 a span{
+    margin-left:10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+/* 金额 */
+.price{
+}
+.price ul{
+    float: right;
+    margin:22px 0;
+    padding-right:30px;
+}
+.price ul li{
+    line-height: 20px;
+}
+.price_info ul li p{
+    /* float: right; */
+    text-align: right;
+}
+.price_info ul li p span:last-child{
+    display: inline-block;
+    margin-left:77px;
+    width:64px;
+}
+.yun_fei p span{
+    font-size: 14px;
+    font-weight: 600;
+    color:#C81623;
+}
+.price_address{
+    background-color: #F4F4F4;
+}
+.sum_price span{
+    font-size: 16px;
+    font-weight: 600;
+    color:#C81623;
+}
+.sum_price p{
+    text-align: right;
+}
+.sum_price p span{
+    margin-left:30px;
+}
+.price_address ul li:nth-child(2) p{
+    display: inline-block;
+}
+.price_address ul li:nth-child(2) p:nth-child(1){
+    margin-right:14px;
+}
+/* 提交订单按钮 */
+.price>a{
+    display: block;
+    float: right;
+    margin:20px 33px 32px 0;
+    width:142px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    text-align: center;
+    color:#fff;
+    background-color: #C81623;
+}

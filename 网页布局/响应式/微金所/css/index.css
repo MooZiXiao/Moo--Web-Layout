@@ -1,0 +1,396 @@
+a {
+  color: inherit;
+}
+body {
+  color: #808080;
+}
+.header {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  color: #808080;
+}
+.header .mobile-ph {
+  height: 40px;
+  border-right: 1px solid #000;
+}
+.header .mobile-ph > a {
+  position: relative;
+}
+.header .mobile-ph > a .wjs-code {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  z-index: 99;
+}
+.header .mobile-ph:hover .wjs-code {
+  display: block;
+}
+.header .wjs-telphone {
+  border-right: 1px solid #000;
+}
+.header .wjs-question {
+  border-right: 1px solid #000;
+}
+.wjs-nav {
+  margin-bottom: 0;
+}
+.wjs-nav .wjs-logo {
+  height: 80px !important;
+  padding: 0;
+}
+.wjs-nav .wjs-logo > span:nth-child(1) {
+  font-size: 80px;
+  color: #ff0000;
+  vertical-align: middle;
+}
+.wjs-nav .wjs-logo > span:nth-child(2) {
+  padding: 0 20px;
+  font-size: 80px;
+  vertical-align: middle;
+}
+.wjs-nav .nav li {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid transparent;
+}
+.wjs-nav .nav li:hover {
+  border-bottom: 1px solid #ff0000;
+}
+.pay-about {
+  padding: 60px 0 60px 30px;
+}
+.pay-about .pay-about-item > a {
+  display: block;
+}
+.pay-about .pay-about-item > a > span {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 40px;
+}
+.pay-about .pay-about-item > a .pay-about-info {
+  float: left;
+}
+.pay-about .pay-about-item > a .pay-about-info > h4 {
+  font-size: 22px;
+}
+.pay-about .pay-about-item > a:hover {
+  color: #ff0000;
+}
+.pay-about .row:nth-child(1) .pay-about-item {
+  margin-bottom: 30px;
+}
+.bespoke {
+  padding: 30px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  color: #333333;
+}
+.bespoke .bespoke-time > a {
+  color: #ff0000;
+  border-bottom: 1px dashed #ff0000;
+}
+.recommend .wjs-tab {
+  padding: 20px 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.recommend .wjs-tab .money-tab-info .money-rate {
+  margin-bottom: 30px;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a {
+  display: flex;
+  background-color: #f7f7f7;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-left {
+  display: table-cell;
+  position: relative;
+  flex: 4;
+  padding: 0 10px;
+  border: 3px solid #cccccc;
+  border-right: 1px dashed #000;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-left > h4 {
+  padding-top: 20px;
+  text-align: center;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-left:hover h4 {
+  text-decoration: underline;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-left .rate-left {
+  float: left;
+  width: 50%;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-left .rate-right {
+  float: right;
+  width: 50%;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-left .rate-right > p {
+  text-align: right;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-left::before {
+  position: absolute;
+  right: -11px;
+  bottom: -9px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-top: 2px solid #cccccc;
+  border-radius: 50%;
+  z-index: 999;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-left::after {
+  position: absolute;
+  right: -11px;
+  top: -9px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #cccccc;
+  border-radius: 50%;
+  z-index: 999;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-right {
+  display: table-cell;
+  flex: 1;
+  position: relative;
+  width: 82px;
+  border: 3px solid #cccccc;
+  border-left: 0;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-right .money-rate-right-w {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 82px;
+  text-align: center;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-right .money-rate-right-w > p:first-child .bao {
+  border: 1px solid #008000;
+  color: #008000;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .money-rate-right .money-rate-right-w > p:first-child .bei {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+.recommend .wjs-tab .money-tab-info .money-rate > a .try-try {
+  position: absolute;
+  left: 17px;
+  top: 2px;
+  font-size: 45px;
+}
+.recommend .wjs-tab .money-tab-info .money-rate .bg-rd {
+  background-color: #ff0000;
+}
+.recommend .wjs-tab .money-tab-info .money-rate .cor-fff {
+  color: #fff;
+}
+.recommend .wjs-tab .money-tab-info .money-rate .br-fff {
+  border-right: 1px dashed #fff !important;
+}
+.recommend .wjs-tab .vertical-tab .news-title {
+  position: relative;
+  height: 40px;
+  font-size: 28px;
+  color: #333333;
+}
+.recommend .wjs-tab .vertical-tab .news-title > span {
+  position: absolute;
+  right: 0;
+  padding-right: 40px;
+  border-bottom: 1px solid #000;
+}
+.recommend .wjs-tab .vertical-tab .news-title::after {
+  position: absolute;
+  bottom: -5px;
+  right: -9px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.recommend .wjs-tab .vertical-tab .nav-tabs-wrap .nav-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.recommend .wjs-tab .vertical-tab .nav-tabs-wrap .nav-tabs li {
+  margin-bottom: 60px;
+  border: 0;
+}
+.recommend .wjs-tab .vertical-tab .nav-tabs-wrap .nav-tabs li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 70px;
+  width: 70px;
+  background: #cccccc;
+  border-radius: 50%;
+}
+.recommend .wjs-tab .vertical-tab .nav-tabs-wrap .nav-tabs li > a span {
+  font-size: 45px;
+  color: #fff;
+}
+.recommend .wjs-tab .vertical-tab .nav-tabs-wrap .nav-tabs li > a:hover {
+  border: 0;
+  background-color: #ff0000;
+}
+.recommend .wjs-tab .vertical-tab .nav-tabs-wrap .line {
+  position: absolute;
+  top: -2px;
+  left: 49%;
+  height: 88%;
+  border-left: 1px dashed #000;
+  z-index: -1;
+}
+.recommend .wjs-tab .tab-content .news-content > ul li {
+  width: 80%;
+  color: #337ab7;
+}
+.news-about {
+  border-bottom: 1px solid #ccc;
+  margin: 30px 0;
+}
+.news-about .news-title {
+  position: relative;
+  height: 40px;
+  font-size: 28px;
+  color: #333333;
+}
+.news-about .news-title > span {
+  position: absolute;
+  right: 0;
+  padding-right: 40px;
+  border-bottom: 1px solid #000;
+}
+.news-about .news-title::after {
+  position: absolute;
+  bottom: -5px;
+  right: -9px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.news-about .nav-tabs-wrap .nav-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.news-about .nav-tabs-wrap .nav-tabs li {
+  margin-bottom: 60px;
+  border: 0;
+}
+.news-about .nav-tabs-wrap .nav-tabs li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 70px;
+  width: 70px;
+  background: #cccccc;
+  border-radius: 50%;
+}
+.news-about .nav-tabs-wrap .nav-tabs li > a span {
+  font-size: 45px;
+  color: #fff;
+}
+.news-about .nav-tabs-wrap .nav-tabs li > a:hover {
+  border: 0;
+  background-color: #ff0000;
+}
+.news-about .nav-tabs-wrap .line {
+  position: absolute;
+  top: -2px;
+  left: 49%;
+  height: 88%;
+  border-left: 1px dashed #000;
+  z-index: -1;
+}
+.footer {
+  padding: 40px 0 30px;
+}
+.footer .footer-title {
+  font-size: 28px;
+  text-align: center;
+}
+.footer .copy {
+  text-align: center;
+  font-size: 80px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .news-title-wrap .news-title {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .news-title-wrap .news-title > span {
+    display: block;
+    left: 0;
+  }
+  .nav-tabs-wrap .nav-tabs {
+    width: 100%;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+  }
+  .nav-tabs-wrap .line {
+    border-left: 0 !important;
+  }
+  .tab-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tab-content .news-content > ul li {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-inner {
+    margin-bottom: 100px;
+  }
+  .carousel-inner .item a:nth-child(2) img {
+    width: 100%;
+  }
+  .money-rate a {
+    display: flex;
+  }
+  .money-rate a .money-rate-left {
+    flex: 7 !important;
+  }
+  .money-rate a .money-rate-right {
+    flex: 1;
+  }
+  .news-title-wrap .news-title {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .news-title-wrap .news-title > span {
+    display: block;
+    left: 0;
+  }
+  .nav-tabs-wrap .nav-tabs {
+    width: 100%;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+  }
+  .nav-tabs-wrap .line {
+    border-left: 0 !important;
+  }
+  .tab-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tab-content .news-content > ul li {
+    width: 100% !important;
+  }
+  .footer .copy a {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,142 @@
+/* header */
+.header{
+    height: 105px;
+    border:0;
+}
+/* login_content */
+.login_content{
+    background-color: #7E00FF;
+}
+.login_content_wrap{
+    padding:60px 0;
+    background: url('../images/login/loginbg.png') no-repeat;
+}
+.login_info_wrap{
+    width:305px;
+    padding:15px 37px;
+    background-color: #fff;
+}
+.login_info_wrap_nav a{
+    font-size: 18px;
+    margin:9px 12px;
+}
+.login_info_wrap_nav a:last-child{
+    color:#C81623;
+}
+.span_line{
+    width:2px;
+    height:18px;
+    margin-top:12px;
+    margin-left:17%;
+    background: #EDEDED;
+}
+.login_info_wrap>p:nth-child(2){
+    font-size: 12px;
+    padding:5px 10px;
+    margin:10px 0;
+    border:1px solid #F5EECF;
+    background-color: #FFFDEE;
+}
+.login_form p{
+    margin-bottom: 17px;
+    border:1px solid #BBBABA;
+}
+.login_form p i{
+    display: inline-block;
+    width:39px;
+    height: 35px;
+    background-color: #CFCDCD;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+}
+.login_form p input{
+    float: right;
+    width:264px;
+    height: 34px;
+    text-indent: 11px;
+    margin-bottom: 17px;
+}
+.login_form p:nth-child(3){
+    padding-right:7px;
+    border:0;
+    color:#B3B3B3;
+    font-size: 12px;
+}
+.login_form p input[type="checkbox"]{
+    float: left;
+    width:19px;
+    height: 19px;
+    margin-top:1px; 
+    margin-right: 6px;
+}
+.login_form p:nth-child(3) label{
+    display: inline-block;
+    margin-top:3px;
+    font-size: 14px;
+}
+.login_form p:nth-child(2) a{
+    display: block;
+    width:303px;
+    height: 41px;
+    background-color: #C81623;
+    line-height: 41px;
+    text-align: center;
+    color: #FFF;
+}
+.other_login ul li{
+    float: left;
+}
+.other_login ul li a{
+    display: block;
+    width:34px;
+    height:34px;
+    margin-right:18px;
+    background: url('../images/login/regetype.png') no-repeat;
+}
+.other_login ul li:nth-child(1) a{
+    background-position:-17px -6px;
+}
+.other_login ul li:nth-child(2) a{
+    background-position:-71px -6px;
+}
+.other_login ul li:nth-child(3) a{
+    background-position:-121px -6px;
+
+}
+.other_login ul li:nth-child(4) a{
+    background-position:-175px -6px;
+}
+.other_login a{
+    line-height: 34px;
+    color:#1474AF;
+    font-size: 14px;
+    margin-right:7px;
+}
+
+.footer{
+    margin-top:23px;
+    background-color: #fff;
+}
+/*.footer{
+    font-size: 12px;
+    margin-top:21px;
+    color:#666;
+    text-align: center;
+}
+ .footer p a.a_line{
+    padding-left:2px;
+    height: 12px;
+    background: #666;
+    margin:0 16px 0 14px;
+}
+.footer p:nth-child(1){
+    height:30px;
+}
+.footer p:nth-child(2){
+    height:25px;
+}
+.footer p:nth-child(3){
+    height: 52px;
+} */

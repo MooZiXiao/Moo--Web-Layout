@@ -1,0 +1,114 @@
+
+/* 内容左边 */
+.content{
+    margin-top:23px;
+}
+.pro-show{
+    width:880px;
+}
+.pro-swiper{
+    margin-bottom:23px;
+}
+.pro-swiper .i-font{
+    position: absolute;
+    right:12px;
+    bottom:6px;
+    color: #fff;
+}
+.pro-swiper .i-font a>i{
+    margin:0 4px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+.pro-swiper .i-font a:nth-child(2) i,
+.pro-swiper .i-font a:hover i{
+    color: #F8B62D;
+}
+/* 游戏中心 */
+.game-content{
+    padding:26px 17px 13px 17px;
+    background-color: #fff;
+}
+.game-content>h3{
+    padding-top:3px;
+    padding-bottom: 6px;
+    color:#333;
+}
+.game-content .game-pro ul li{
+    float: left;
+    width:186px;
+    margin:13px 34px 0px 0;
+}
+.game-content .game-pro ul li:nth-child(4n){
+    margin-right:0;
+}
+.game-content .game-pro li a{
+    display: block;
+}
+.game-content .game-pro li a img{
+    width:100%;
+    height:245px;
+}
+.game-content .game-pro li a p{
+    padding:13px 0;
+}
+
+/* 最近更新 */
+.news{
+    margin-top:22px;
+    padding:30px 16px 0 17px;
+    background-color: #fff;
+}
+.news h3{
+    margin-bottom: 21px;
+    font-size: 16px;
+}
+.news ul li{
+    float: left;
+    width:118px;
+    margin-right:27px;
+    margin-bottom: 36px;
+}
+.news ul li:nth-child(6n){
+    margin-right:0;
+}
+.news ul li a img{
+    width:100%;
+    height:178px;
+}
+.news ul li a p{
+    color:#A9A9A9;
+}
+.news ul li a p:nth-child(2){
+    margin-top: 12px;
+    margin-bottom: 26px;
+    font-size: 14px;
+    color: #565656;
+}
+.news ul li a p:nth-child(3){
+    margin-bottom: 17px;
+}
+
+/* 右边内容 */
+.pro-list{
+    background-color: #fff;
+}
+.pro-list h3{
+    margin:14px 0;
+    padding-left:15px;
+}
+.pro-list-ul ul li{
+    width:240px;
+}
+.pro-list-ul ul li a img{
+    width:100%;
+    height:112px;
+    border-radius: 2px;
+}
+.pro-list-ul ul li a p{
+    margin-top:12px;
+    margin-left:15px;
+    margin-bottom: 16px;
+    color: #8F8F8F;
+}

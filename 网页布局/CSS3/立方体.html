@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width:400px;
+            height:400px;
+            margin:200px auto;
+            position: relative;
+            font-size: 0px;
+            line-height: 400px;
+            text-align: center;
+            background-color: hotpink;
+            transform-style: preserve-3d;
+            transform:rotate3d(1,1,1,30deg);
+        }
+        .box div{
+            width:400px;
+            height:400px;
+            position: absolute;
+            /* transition: all 2s; */
+            transition-timing-function: linear;
+            transition-duration: 2s;
+        }
+        .box:hover{
+            font-size: 40px;
+            background-color: transparent;
+        }
+        .box:hover .top{
+            background-color: rgb(255, 255, 0,.5);   
+            transform: translateY(-200px) rotateX(90deg) rotateZ(0deg);
+            transition-delay: 2s;
+        }
+        .box:hover .bot{
+            background-color: rgb(255, 105, 180,.5);
+            transform: translateY(200px) rotateX(90deg);
+            transition-delay: 3s;
+        }
+        .box:hover .left{
+            background-color: rgb(255, 0, 0,.5);
+            transform: translateX(-200px) rotateY(90deg) ;
+            transition-delay: 4s;
+        }
+        .box:hover .right{
+            background-color: rgb(255, 165, 0,.5);
+            transform: translateX(200px) rotateY(90deg);
+            transition-delay: 5s;
+        }
+        .box:hover .front{
+            background-color: rgb(128, 128, 128,.5);
+            transform: translateZ(200px) rotateZ(90deg);
+            transition-delay: 6s;
+        }
+        .box:hover .back{
+            background-color: rgb(0, 128, 0,.3); 
+            transform: translateZ(-200px) rotateZ(90deg);
+            transition-delay: 7s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="top">上</div>
+        <div class="left">左</div>
+        <div class="right">右</div>
+        <div class="front">前</div>
+        <div class="back">后</div>
+        <div class="bot">下</div>
+    </div>
+</body>
+</html>

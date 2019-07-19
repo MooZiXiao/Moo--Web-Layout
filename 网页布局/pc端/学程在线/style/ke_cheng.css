@@ -1,0 +1,203 @@
+
+*{padding:0;margin:0;list-style: none;text-decoration: none;color:#424243;}
+body{
+    background: #f3f5f7;
+}
+.xue_cheng_wang{
+    width:1349px;
+    margin:0 auto;
+}
+
+nav{
+    width:1349px;
+    height:201px;
+    background: #fff;
+}
+.nav{
+    width:1200px;
+    margin-left:74.5px;
+    font-size:14px;
+}
+.nav ul{
+    width:1200px;
+    height:66px;
+    line-height:66px;
+}
+.nav ul:nth-child(1),
+.nav ul:nth-child(2){
+    border-bottom: 1px solid #d7d7d7;
+}
+.nav ul li{
+    float:left;
+}
+.nav ul li a{
+    padding:0 14px;
+}
+.nav ul li:nth-child(2) a span{
+    color: #fff;
+    padding:2px 5px;
+    background: #00a4ff;
+}
+.nav ul:nth-child(2) li:nth-child(6){
+    float: right;
+}
+.nav ul:nth-child(2) li:nth-child(6) a span{
+    color:#00a4ff;
+}
+.nav ul li a span i{
+    color:#00a4ff;
+    font-size: 16px;
+    margin-left:4px;
+    margin-right:15px;
+}
+/* pro */
+.pro{
+    width:1200px;
+    margin-left:74.5px;
+}
+.pro_l{
+    float:left;
+    width: 957px;
+    font-size: 14px;
+}
+.pro_header{
+    width:957px;
+    height: 65px;
+    float: left;
+    line-height: 65px;
+}
+.pro_header_l a{
+    padding:0 17px;
+    float: left;
+    font-weight: 600;
+}
+.pro_header_r{
+    float: right;
+}
+.pro_header_r a{
+    font-size: 18px;
+    padding:0 4px;
+}
+.pro_header_r span,
+.pro_header_r a:nth-child(3) i{
+    color: #00a4ff;
+}
+.pro_info a{
+    color: #050505;
+    width:233px;
+    height: 280px;
+    float: left;
+    margin-bottom:16px;
+    background: #fff;
+}
+.pro_pic{
+    float: left;
+    position: relative;
+}
+.pro_pic img{
+    float: left;
+    margin-bottom: 18px;
+}
+.pro_pic img:nth-child(2){
+    position: absolute;
+    top:12px;
+    right:-4px;
+}
+.l_proText p{
+    color: #050505;
+    width:187px;
+    float: left;
+    line-height: 20px;
+    margin:0 24px;
+}
+.l_proText p:nth-child(1){
+    height: 70px;
+}
+.l_proText p:nth-child(2) span:nth-child(1){
+    color: #ff7c2d;
+}        
+.l_proText p  b,     
+.l_proText p:nth-child(2) span{
+    color:#999;
+}
+.pro_l a:nth-child(4n-2){
+    margin:0 8.3px;
+}
+.pro_l a:nth-child(4n+4){
+    margin-left:8.3px;
+}
+.pro_footer{
+    float: left;
+    width:957px;
+    margin-top:30px;
+    margin-bottom:40px;
+    text-align: center;
+}
+.pro_footer a{
+    color:#999;
+    padding:10px 16px;
+}
+.pro_footer a:nth-child(3){
+    color:#fff;
+    background: #00a4ff;
+}      
+.pro_r{
+    width:228px;
+    float: left;
+    margin-left:15px;
+}
+/* 课程右边头部样式 */
+.r_por_1{
+    float: left;
+    width:228px;
+}
+.r_por_1 h4, .r_por_2 h4{
+    color:#00a4ff;     
+    float: left;
+    font-weight: 500;       line-height:66px;
+    margin-left:15px;
+}
+.r_por_1 p, .r_por_2 p{
+    float: left;
+    width:188px;
+    line-height:18px;
+}
+.r_por_1>p, .r_por_2>p{
+    color: #fff;
+    height: 88px;
+    font-size:12px;
+    padding: 7px 25px;
+    letter-spacing: 2px;
+}
+.r_por_1>p{
+    background: url('../images/index/pro_r_bg1.png') no-repeat;
+}
+.r_por_1 a, .r_por_2 a{
+    float: left;
+    height: 102px;
+    font-size: 14px;
+    margin: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.r_por_1 a p:nth-child(1),
+.r_por_2 a p:nth-child(1){
+    color:#050505;
+    height: 52px;
+    padding-top:12px;
+}
+.r_por_1 a p b,
+.r_por_1 a p span:nth-child(3),
+.r_por_2 a p b,
+.r_por_2 a p span:nth-child(3){
+    color:#999;
+}
+.r_por_1 a p span:nth-child(1),
+.r_por_2 a p span:nth-child(1){
+    color: #ff7c2d;
+}
+.r_por_2>p{
+    background: url('../images/index/pro_r_bg2.png') no-repeat;
+}
+b{
+    font-size: 18px;
+}

@@ -1,0 +1,105 @@
+
+.header{
+    height:105px;
+}
+
+.zhuce{
+    margin: 23px 0;
+}
+.tdRight{
+    float:right;
+    line-height:41px;
+}
+.content{
+    padding-bottom: 50px;
+    border:1px solid #ddd;
+}
+.cont-header{
+    height:41px;
+    padding:0 12px;
+    background: #ececec;
+    border:1px solid #dedede;
+}
+.cont-header h5{
+    line-height: 41px;
+    font-weight: normal;
+    float: left;
+}
+.cont-header span{
+    float:right;
+    line-height: 41px;
+}
+.cont-header a{
+    color:#f10;
+}
+.content table{
+    margin:0 auto;
+}
+.content table tr td{
+    margin-top:21px;
+}
+.content table tr td span{
+    display: inline-block;
+    margin-left:10px;
+    font-size: 12px;
+    line-height: 40px;
+    color:#DF3033;
+    /* padding-left:27px; */
+}
+.content table tr td i{
+    margin-left:15px;
+    vertical-align: middle;
+    font-size: 22px;
+    color:#DF3033;
+}
+.content input{
+    width:239px;
+    height:34px;
+    margin-top:21px;
+    border:1px solid #ddd;
+}
+.sale{
+    margin-left:73px;
+}
+.sale b{
+    float: left;
+    margin-right:10px;
+    font-size: 12px;
+}
+.sale ul li{
+    float: left;
+    font-size: 12px;
+    color: #fff;
+    background: #44bb3d;
+    padding:0 12px;
+    margin-left:1px;
+}
+.sale ul li:first-child{
+    background: #dd1112;
+}
+.sale ul li:last-child{
+    background: #f79100;
+}
+.checkBox{
+    width:16px !important;
+    height:16px;
+    float:left;
+    color: #aed1f9;
+    margin-right:3px;
+    border:1px solid #9b9b9b;
+}
+.sale table tr td b{
+    font-size: 12px;
+    font-weight: normal;
+}
+.zhuceBtn{
+    color:#fff;
+    width:200px !important;
+    border: none;
+    margin-left:13px;
+    background:#c81622;
+}
+.footer{
+    margin-top:23px;
+    background-color: #fff;
+}

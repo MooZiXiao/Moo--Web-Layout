@@ -1,0 +1,388 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input {
+  outline: none;
+  border: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+.jd .sup-top {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #c91523;
+}
+.jd .sup-top .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+}
+.jd .sup-top .logo h1 {
+  display: flex;
+}
+.jd .sup-top .logo h1 a {
+  display: block;
+  width: 56px;
+  height: 20px;
+  font-size: 0;
+  background: url('../images/jd-sprites.png') no-repeat 0 -110px;
+  background-size: 200px 200px;
+}
+.jd .sup-top .search {
+  flex: 1;
+  position: relative;
+  padding: 5px;
+}
+.jd .sup-top .search input[type="text"] {
+  width: 100%;
+  height: 100%;
+  text-indent: 30px;
+  border-radius: 15px;
+}
+.jd .sup-top .search::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  background: url('../images/jd-sprites.png') no-repeat -60px -110px;
+  background-size: 200px 200px;
+}
+.jd .sup-top .login {
+  width: 50px;
+}
+.jd .sup-top .login > a {
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+.jd .act-banner {
+  overflow: hidden;
+  width: 100%;
+}
+.jd .act-banner ul {
+  display: flex;
+  width: 600%;
+}
+.jd .act-banner ul li {
+  width: 100%;
+}
+.jd .sup-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  background-color: #fff;
+  font-size: 14px;
+  color: #666;
+}
+.jd .sup-nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.jd .sup-nav a img {
+  width: 50%;
+}
+.jd .sup-nav a:nth-child(-n+5) {
+  margin-bottom: 10px;
+}
+.jd .miao-sha {
+  margin-top: 10px;
+  background-color: #fff;
+}
+.jd .miao-sha .miao-sha-title {
+  display: flex;
+  justify-content: space-between;
+}
+.jd .miao-sha .miao-sha-title .ms-title-l {
+  display: flex;
+}
+.jd .miao-sha .miao-sha-title .ms-title-l > h3 {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  color: #c91523;
+}
+.jd .miao-sha .miao-sha-title .ms-title-l > h3 span {
+  width: 25px;
+  height: 30px;
+  margin: 0 12px;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: -82px -109.5px;
+}
+.jd .miao-sha .miao-sha-title .ms-title-l > .time {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.jd .miao-sha .miao-sha-title .ms-title-l > .time span {
+  padding: 2px 3px;
+  background-color: #3d3d3d;
+  color: #fff;
+}
+.jd .miao-sha .miao-sha-title .ms-title-l > .time span.dian {
+  background-color: #fff;
+  color: #3d3d3d;
+}
+.jd .miao-sha .miao-sha-title .ms-title-r {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.jd .miao-sha .ms-content {
+  display: flex;
+  font-size: 14px;
+}
+.jd .miao-sha .ms-content a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3333%;
+  margin-top: 10px;
+}
+.jd .miao-sha .ms-content a span {
+  color: #c91523;
+}
+.jd .miao-sha .ms-content a del {
+  color: #666666;
+}
+.jd .ad-618 {
+  /* 亿万神券 */
+  position: relative;
+}
+.jd .ad-618 .ad-618-content {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+.jd .ad-618 .ad-618-content > a {
+  float: left;
+  width: 50%;
+}
+.jd .ad-618 .ad-618-content > a img {
+  width: 95%;
+}
+.jd .ad-618-major .ad-618-major-top {
+  display: flex;
+}
+.jd .ad-618-major .ad-618-major-top a {
+  width: 33.33%;
+}
+.jd .ad-618-major .ad-618-major-bot {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jd .ad-618-major .ad-618-major-bot a {
+  width: 50%;
+}
+.jd .advert {
+  /* 广告 */
+  padding: 5px;
+}
+.jd .market {
+  /*特色超市*/
+  padding: 0 5px;
+}
+.jd .market .market-title {
+  padding: 10px 0;
+}
+.jd .market .market-title > h3 {
+  font-size: 16px;
+  color: #c91523;
+}
+.jd .market .market-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jd .market .market-content ul li {
+  width: 50%;
+}
+.jd .theme {
+  /*主题街*/
+}
+.jd .theme .theme-title {
+  padding: 5px;
+}
+.jd .theme .theme-title h3 {
+  font-size: 16px;
+  color: #cc1523;
+}
+.jd .theme .theme-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jd .theme .theme-content ul li {
+  width: 50%;
+}
+.jd .brand {
+  /*品牌*/
+}
+.jd .brand ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jd .brand ul li:nth-child(1) {
+  flex: 2.5;
+}
+.jd .brand ul li:nth-child(2) {
+  flex: 3.8;
+  display: flex;
+}
+.jd .brand ul li:nth-child(2) > a {
+  width: 50%;
+}
+.jd .like {
+  /* 猜你喜欢 */
+}
+.jd .like .like-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.jd .like .like-title h3 {
+  font-size: 16px;
+  color: #c91523;
+}
+.jd .like .like-title a {
+  display: flex;
+  font-size: 12px;
+  color: #c91523;
+}
+.jd .like .like-title a span {
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/icon-login.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 18px 18px;
+}
+.jd .like .like-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jd .like .like-content ul li {
+  width: 50%;
+  padding: 0 9px;
+}
+.jd .like .like-content ul li .like-pro-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.jd .like .like-content ul li .like-pro-title .price {
+  color: #c91523;
+}
+.jd .like .like-content ul li .like-pro-title .seem {
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #666;
+}
+.jd .like .like-content ul li a {
+  display: block;
+  font-size: 14px;
+}
+.jd .like .like-content ul li a > span {
+  display: flex;
+  overflow: hidden;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.jd .more {
+  margin-top: 5px;
+  padding: 10px 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+.jd .footer {
+  margin-bottom: 50px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: #666;
+}
+.jd .footer .footer-top {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jd .footer .footer-top .line {
+  width: 1px;
+  height: 14px;
+  background-color: #666;
+  margin: 0 10px;
+}
+.jd .footer .footer-cont {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.jd .footer .footer-cont a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jd .footer .footer-cont a span:nth-child(1) {
+  width: 33px;
+  height: 33px;
+  margin-bottom: 5px;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: -120px -70px;
+  background-size: 200px 200px;
+}
+.jd .footer .footer-cont a:nth-child(2) span:nth-child(1) {
+  background-position: -40px -70px;
+}
+.jd .footer .footer-cont a:nth-child(3) span:nth-child(1) {
+  background-position: -80px -70px;
+}
+.jd .footer .footer-copy {
+  padding: 20px 0;
+  text-align: center;
+}
+.jd .sub-nav {
+  float: left;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  z-index: 9999;
+}
+.jd .sub-nav a {
+  float: left;
+  width: 20%;
+  height: 50px;
+}
+.jd .sub-nav a img {
+  width: 72px;
+}

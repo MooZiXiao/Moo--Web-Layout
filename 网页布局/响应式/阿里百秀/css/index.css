@@ -1,0 +1,171 @@
+.item .menu-left > a {
+  display: block;
+  width: 100%;
+  background-color: #429ad9;
+}
+.item .menu-left > a img {
+  display: block;
+  width: 100%;
+}
+.item .menu-left .menu {
+  background-color: #eeeeee;
+}
+.item .menu-left .menu a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.item .menu-left .menu a > span {
+  margin: 0 2px;
+}
+.item .new-pic {
+  display: table-row;
+  width: 50%;
+}
+.item .new-pic > a {
+  display: table-cell;
+  position: relative;
+  width: 50%;
+  vertical-align: top;
+}
+.item .new-pic > a img {
+  display: block;
+  width: 100%;
+}
+.item .new-pic > a > span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #666666;
+}
+.item .new-pic .new-pic-r {
+  display: table-cell;
+  width: 50%;
+}
+.item .new-pic .new-pic-r > a {
+  position: relative;
+  float: left;
+  width: 50%;
+  border-left: 5px solid #fff;
+}
+.item .new-pic .new-pic-r > a img {
+  display: block;
+  width: 100%;
+}
+.item .new-pic .new-pic-r > a:nth-child(3) {
+  clear: both;
+}
+.item .new-pic .new-pic-r > a:nth-child(-n+2) {
+  border-bottom: 5px solid #fff;
+}
+.item .new-pic .new-pic-r > a > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.item .news {
+  margin-top: 5px;
+}
+.item .news .item {
+  border-top: 1px solid #ccc;
+}
+.item .news .item .item-l > a {
+  color: #000;
+}
+.item .news .item .item-l > a > span {
+  color: #666;
+}
+.item .news .item .item-l .select {
+  padding: 5px 0;
+}
+.item .news .item .item-r {
+  padding: 20px 0 0 30px;
+}
+.item .item-r > a {
+  display: block;
+}
+.item .item-r > a img {
+  width: 100%;
+}
+.item .item-r .wb {
+  position: relative;
+  width: 100%;
+}
+.item .item-r .wb > a {
+  display: block;
+  margin-top: 30px;
+  padding: 30px 20px 10px;
+  border: 1px solid #ccc;
+}
+.item .item-r .wb > a > h3 {
+  font-size: 16px;
+}
+.item .item-r .wb > a .wb-text {
+  color: #666;
+}
+.item .item-r .wb > span {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  padding: 10px;
+  background-color: #0094ff;
+  color: #fff;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .item .menu-left > a {
+    width: 100%;
+  }
+  .item .menu-left > a img {
+    width: 35%;
+    margin: 0 auto;
+  }
+  .item .menu-left .menu > a {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .item .menu-left > a > span {
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+  }
+  .item .menu-left .menu > a {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  .item .new-pic > a {
+    display: block;
+    width: 100%;
+  }
+  .item .new-pic > a img {
+    width: 100%;
+  }
+  .item .new-pic .new-pic-r {
+    display: block;
+    width: 100%;
+  }
+  .item .new-pic .new-pic-r > a {
+    float: left;
+    width: 50%;
+    background-color: #ccc;
+  }
+  .item .new-pic .new-pic-r > a > img {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  .item .new-pic .new-pic-r > a > span {
+    width: 100%;
+  }
+}

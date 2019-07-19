@@ -1,0 +1,213 @@
+.item {
+    .menu-left {
+        >a {
+            display: block;
+            width: 100%;
+            background-color: #429ad9;
+
+            img {
+                display: block;
+                width: 100%
+            }
+        }
+
+        .menu {
+            background-color: #eeeeee;
+
+            a {
+                display: block;
+                padding: 15px 20px;
+                text-decoration: none;
+
+                >span {
+                    margin: 0 2px;
+                }
+            }
+        }
+    }
+
+    .new-pic {
+        display: table-row;
+        width: 50%;
+
+        >a {
+            display: table-cell;
+            position: relative;
+            width: 50%;
+            vertical-align: top;
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            >span {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 20px 15px;
+                font-size: 24px;
+                color: #fff;
+                background-color: #666666;
+            }
+        }
+
+
+        .new-pic-r {
+            display: table-cell;
+            width: 50%;
+
+            >a {
+                position: relative;
+                float: left;
+                width: 50%;
+                border-left: 5px solid #fff;
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+
+                &:nth-child(3) {
+                    clear: both;
+                }
+
+                &:nth-child(-n+2) {
+                    border-bottom: 5px solid #fff;
+                }
+                >span{
+                    position: absolute;
+                    bottom: 0;
+                    left:0;
+                    padding:0 5px;
+                    background: rgba(0,0,0,.5);
+                    color:#fff;
+                }
+            }
+        }
+
+
+    }
+
+    .news{
+        margin-top:5px;
+        .item{
+            border-top:1px solid #ccc;
+            .item-l{
+                >a{
+                    color:#000;
+                    >span{
+                        color:#666;
+                    }
+                }
+                .select{
+                    padding:5px 0;
+                }
+            }
+            .item-r{
+                padding:20px 0 0 30px;
+                img{
+
+                }
+            }
+        }
+    }
+
+    .item-r{
+        >a{
+            display: block;
+            img{
+                width:100%;
+            }
+        }
+        .wb{
+            position: relative;
+            width:100%;
+            >a{
+                display: block;
+                margin-top:30px;
+                padding:30px 20px 10px;
+                border:1px solid #ccc;
+                >h3{
+                    font-size: 16px;
+                }
+                .wb-text{
+                    color:#666;
+                }
+            }
+            >span{
+                position: absolute;
+                top:0;
+                left:20px;
+                padding:10px;
+                background-color: #0094ff;
+                color:#fff;
+            }
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        .menu-left{
+            >a{
+                width:100%;
+                img{
+                    width:35%;
+                    margin: 0 auto;
+                }
+            }
+            .menu{
+                >a{
+                    float: left;
+                    width:20%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .menu-left{
+            >a{
+                >span{
+                    padding:20px;
+                    font-size: 24px;
+                    text-align: center;
+                    color:#fff;
+                }
+            }
+            .menu{
+                >a{
+                    float: left;
+                    width:20%;
+                    text-align: center;
+                }
+            }
+        }
+        .new-pic{
+            
+            >a{
+                display: block;
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            .new-pic-r{
+                display: block;
+                width:100%;
+                >a{
+                    float: left;
+                    width:50%;
+                    background-color: #ccc;
+                    >img{
+                        width:50%;
+                        margin:0 auto;
+                        border-radius: 50%;
+                    }
+                    >span{
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}

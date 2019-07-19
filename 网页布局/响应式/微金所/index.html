@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>微金所</title>
+    <link rel="stylesheet" href="./css/wjsfont.css">
+    <link rel="stylesheet" href="./lib/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        whatScreen();
+        window.onresize = function () {
+            whatScreen();
+        };
+        function whatScreen() {
+            var width = document.querySelector("html").offsetWidth;
+            var title = document.querySelector("title");
+            if (width <= 768) {
+                title.innerHTML = "极小屏幕-" + width;
+            } else {
+                if (width > 768 && width <= 992) {
+                    title.innerHTML = "小屏幕-" + width;
+                } else {
+                    if (width > 992 && width <= 1200) {
+                        title.innerHTML = "普通屏幕-" + width;
+                    } else {
+                        if (width > 1200) {
+                            title.innerHTML = "大屏幕-" + width;
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- header部分 -->
+    <div class="header hidden-sm hidden-xs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="mobile-ph">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                            <span>手机微金所</span>
+                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                            <div class="wjs-code">
+                                <img src="./images/code.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <div class="wjs-telphone">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                            <span> 4006-89-4006（服务时间：9:00-21:00)</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <div class="wjs-question">
+                        <a href="#">常见问题</a>
+                        <a href="#">财富登陆</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="wjs-login">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                免费注册
+                            </button>
+                        </div>
+                        <a href="#">登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav部分 -->
+    <nav class="navbar navbar-default wjs-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand wjs-logo" href="#"><span class="wjsfont wjsfont-logo"></span><span class="wjsfont wjsfont-name"></span></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">我要投资</a></li>
+                    <li><a href="#">我要借贷</a></li>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">新手专区</a></li>
+                    <li><a href="#">最新动态</a></li>
+                    <li><a href="#">微平台</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm">
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 轮播部分 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="#" class="hidden-xs"><img src="./images/slide_01_2000x410.jpg" alt="..."></a>
+                <a href="#" class="visible-xs"><img src="./images/slide_01_640x340.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#" class="hidden-xs"><img src="./images/slide_02_2000x410.jpg" alt="..."></a>
+                <a href="#" class="visible-xs"><img src="./images/slide_02_640x340.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#" class="hidden-xs"><img src="./images/slide_03_2000x410.jpg" alt="..."></a>
+                <a href="#" class="visible-xs"><img src="./images/slide_03_640x340.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="#" class="hidden-xs"><img src="./images/slide_04_2000x410.jpg" alt="..."></a>
+                <a href="#" class="visible-xs"><img src="./images/slide_04_640x340.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- 支付保障部分 -->
+    <div class="pay-about hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="pay-about-item">
+                        <a href="#" class="clearfix">
+                            <span class="wjsfont wjsfont-e901"></span>
+                            <div class="pay-about-info">
+                                <h4>支付交易保障</h4>
+                                <span>银联支付全称保证支付安全</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="pay-about-item">
+                        <a href="#" class="clearfix">
+                            <span class="wjsfont wjsfont-e902"></span>
+                            <div class="pay-about-info">
+                                <h4>支付交易保障</h4>
+                                <span>银联支付全称保证支付安全</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="pay-about-item">
+                        <a href="#" class="clearfix">
+                            <span class="wjsfont wjsfont-e903"></span>
+                            <div class="pay-about-info">
+                                <h4>支付交易保障</h4>
+                                <span>银联支付全称保证支付安全</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="pay-about-item">
+                        <a href="#" class="clearfix">
+                            <span class="wjsfont wjsfont-e904"></span>
+                            <div class="pay-about-info">
+                                <h4>支付交易保障</h4>
+                                <span>银联支付全称保证支付安全</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="pay-about-item">
+                        <a href="#" class="clearfix">
+                            <span class="wjsfont wjsfont-e905"></span>
+                            <div class="pay-about-info">
+                                <h4>支付交易保障</h4>
+                                <span>银联支付全称保证支付安全</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="pay-about-item">
+                        <a href="#" class="clearfix">
+                            <span class="wjsfont wjsfont-e901"></span>
+                            <div class="pay-about-info">
+                                <h4>支付交易保障</h4>
+                                <span>银联支付全称保证支付安全</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 预约提示部分 -->
+    <div class="bespoke">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <div class="bespoke-time">
+                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                        现在有 273 人在排队，累计预约交易成功 7571 次。 什么是预约投标？ <a href="#">立即预约</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                    <div class="wjs-movie">
+                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                        <span>微金所企业宣传片</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 特别推荐 tab部分 -->
+    <div class="recommend">
+        <div role="tabpanel">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                        data-toggle="tab">特别推荐</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                        data-toggle="tab">Profile</a>
+                </li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                        data-toggle="tab">Messages</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
+                        data-toggle="tab">Settings</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content wjs-tab">
+                <div role="tabpanel" class="tab-pane active money-tab-info" id="home">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="money-rate">
+                                <a href="#" class="">
+                                    <div class="money-rate-left clearfix">
+                                        <h4>新手体验1002期</h4>
+                                        <div class="rate-left">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                        </div>
+                                        <div class="rate-right">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                            <p>借款期限</p>
+                                            <!-- <p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                        60%
+                                                    </div>
+                                                </div>
+                                            </!-->
+                                        </div>
+                                    </div>
+                                    <div class="money-rate-right">
+
+                                        <div class="money-rate-right-w">
+                                            <!-- <p>
+                                                <span class="bao" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="人家是一个">宝</span>
+                                                <span class="bei" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="人家是一个">贝</span>
+                                            </p> -->
+                                            <p>8</p>
+                                            <p>年利率</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="money-rate">
+                                <a href="#" class=" bg-rd cor-fff">
+                                    <div class="money-rate-left clearfix br-fff">
+                                        <h4>新手体验1002期</h4>
+                                        <div class="rate-left">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                        </div>
+                                        <div class="rate-right">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                            <!-- <p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                        60%
+                                                    </div>
+                                                </div>
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <div class="money-rate-right">
+
+                                        <div class="money-rate-right-w">
+                                            <!-- <p>
+                                                <span class="bao" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="人家是一个">宝</span>
+                                                <span class="bei" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="人家是一个">贝</span>
+                                            </p> -->
+                                            <p>8</p>
+                                            <p>年利率</p>
+                                        </div>
+                                    </div>
+                                    <span class="wjsfont wjsfont-e915 try-try"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="money-rate">
+                                <a href="#" class="">
+                                    <div class="money-rate-left clearfix">
+                                        <h4>新手体验1002期</h4>
+                                        <div class="rate-left">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                        </div>
+                                        <div class="rate-right">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                            <p>借款期限</p>
+                                            <p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                        60%
+                                                    </div>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="money-rate-right">
+
+                                        <div class="money-rate-right-w">
+                                            <!-- <p>
+                                                <span class="bao" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="人家是一个">宝</span>
+                                                <span class="bei" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="人家是一个">贝</span>
+                                            </p> -->
+                                            <p>8</p>
+                                            <p>年利率</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="money-rate">
+                                <a href="#" class=" bg-rd cor-fff">
+                                    <div class="money-rate-left clearfix br-fff">
+                                        <h4>新手体验1002期</h4>
+                                        <div class="rate-left">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                        </div>
+                                        <div class="rate-right">
+                                            <p>起投金额</p>
+                                            <p>0.01万</p>
+                                            <p>借款期限</p>
+                                            <p>10天</p>
+                                            <!-- <p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                        60%
+                                                    </div>
+                                                </div>
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <div class="money-rate-right">
+
+                                        <div class="money-rate-right-w">
+                                            <!-- <p>
+                                                <span class="bao" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="人家是一个">宝</span>
+                                                <span class="bei" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="人家是一个">贝</span>
+                                            </p> -->
+                                            <p>8</p>
+                                            <p>年利率</p>
+                                        </div>
+                                    </div>
+                                    <span class="wjsfont wjsfont-e915 try-try"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row vertical-tab">
+                        <div class="col-lg-5 col-md-5 col-sm-12 news-title-wrap">
+                            <div class="news-title clearfix">
+                                <span>全部新闻</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 clearfix">
+                            <!-- Nav tabs -->
+                            <div class="nav-tabs-wrap">
+                                <ul class="nav nav-tabs clearfix" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home-2" aria-controls="home"
+                                            role="tab" data-toggle="tab"><span
+                                                class="glyphicon glyphicon-tree-deciduous"
+                                                aria-hidden="true"></span></a></li>
+                                    <li role="presentation"><a href="#profile-2" aria-controls="profile" role="tab"
+                                            data-toggle="tab"><span class="glyphicon glyphicon-list-alt"
+                                                aria-hidden="true"></span></a></li>
+                                    <li role="presentation"><a href="#messages-2" aria-controls="messages" role="tab"
+                                            data-toggle="tab"><span class="glyphicon glyphicon-tree-deciduous"
+                                                aria-hidden="true"></span></a></li>
+                                    <li role="presentation"><a href="#settings-2" aria-controls="settings" role="tab"
+                                            data-toggle="tab"><span class="glyphicon glyphicon-gift"
+                                                aria-hidden="true"></span></a></li>
+                                </ul>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home-2">
+                                    <div class="news-content">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a
+                                                    href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                            <li class="list-group-item"><a
+                                                    href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile-2">...2</div>
+                                <div role="tabpanel" class="tab-pane" id="messages-2">...3</div>
+                                <div role="tabpanel" class="tab-pane" id="settings-2">...4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane vertical-tab" id="profile">
+                    <div role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-12 news-title-wrap">
+                                <div class="news-title clearfix">
+                                    <span>全部新闻</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <!-- Nav tabs -->
+                                <div class="nav-tabs-wrap">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home-4" aria-controls="home"
+                                                role="tab" data-toggle="tab"><span
+                                                    class="glyphicon glyphicon-tree-deciduous"
+                                                    aria-hidden="true"></span></a></li>
+                                        <li role="presentation"><a href="#profile-4" aria-controls="profile" role="tab"
+                                                data-toggle="tab"><span class="glyphicon glyphicon-list-alt"
+                                                    aria-hidden="true"></span></a></li>
+                                        <li role="presentation"><a href="#messages-4" aria-controls="messages"
+                                                role="tab" data-toggle="tab"><span
+                                                    class="glyphicon glyphicon-tree-deciduous"
+                                                    aria-hidden="true"></span></a></li>
+                                        <li role="presentation"><a href="#settings-4" aria-controls="settings"
+                                                role="tab" data-toggle="tab"><span class="glyphicon glyphicon-gift"
+                                                    aria-hidden="true"></span></a></li>
+                                    </ul>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home-4">
+                                        <div class="news-content">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a
+                                                        href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                                <li class="list-group-item"><a
+                                                        href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                                <li class="list-group-item"><a
+                                                        href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                                <li class="list-group-item"><a
+                                                        href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                                <li class="list-group-item"><a
+                                                        href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile-4">...2</div>
+                                    <div role="tabpanel" class="tab-pane" id="messages-4">...3</div>
+                                    <div role="tabpanel" class="tab-pane" id="settings-4">...4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">.2..</div>
+                <div role="tabpanel" class="tab-pane" id="settings">...4</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="news-about">
+        
+        <div role="tabpanel">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 news-title-wrap">
+                    <div class="news-title clearfix">
+                        <span>全部新闻</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <!-- Nav tabs -->
+                    <div class="nav-tabs-wrap">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home-3" aria-controls="home"
+                                    role="tab" data-toggle="tab"><span
+                                        class="wjsfont wjsfont-new01"
+                                        aria-hidden="true"></span></a></li>
+                            <li role="presentation"><a href="#profile-3" aria-controls="profile" role="tab"
+                                    data-toggle="tab"><span class="wjsfont wjsfont-new02"
+                                        aria-hidden="true"></span></a></li>
+                            <li role="presentation"><a href="#messages-3" aria-controls="messages"
+                                    role="tab" data-toggle="tab"><span
+                                        class="wjsfont wjsfont-new03"
+                                        aria-hidden="true"></span></a></li>
+                            <li role="presentation"><a href="#settings-3" aria-controls="settings"
+                                    role="tab" data-toggle="tab"><span class="wjsfont wjsfont-new04"
+                                        aria-hidden="true"></span></a></li>
+                        </ul>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home-3">
+                            <div class="news-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a
+                                            href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                    <li class="list-group-item"><a
+                                            href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                    <li class="list-group-item"><a
+                                            href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                    <li class="list-group-item"><a
+                                            href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                    <li class="list-group-item"><a
+                                            href="#">2016-9-19【微还款】一周还款公告2016年1月18日-1月24日</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile-3">...2</div>
+                        <div role="tabpanel" class="tab-pane" id="messages-3">...3</div>
+                        <div role="tabpanel" class="tab-pane" id="settings-3">...4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部部分 -->
+    <div class="footer">
+        <div class="footer-title">和这些单位都有合作哦</div>
+        <div class="copy">
+            <a href="#" class="wjsfont wjsfont-partner01"></a>
+            <a href="#" class="wjsfont wjsfont-partner02"></a>
+            <a href="#" class="wjsfont wjsfont-partner03"></a>
+            <a href="#" class="wjsfont wjsfont-partner04"></a>
+            <a href="#" class="wjsfont wjsfont-partner05"></a>
+            <a href="#" class="wjsfont wjsfont-partner06"></a>
+            <a href="#" class="wjsfont wjsfont-partner07"></a>
+            <a href="#" class="wjsfont wjsfont-partner08"></a>
+            <a href="#" class="wjsfont wjsfont-partner09"></a>
+        </div>
+    </div>
+</body>
+<script src="./lib/js/jquery.js"></script>
+<script src="./lib/js/bootstrap.js"></script>
+
+</html>
